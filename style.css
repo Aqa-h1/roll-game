@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to top left, #753682 0%, #20901a 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+main {
+    position: relative;
+    width: 75%;
+    height: 77%;
+    background-color: rgba(225, 225, 225, 0.5);
+    backdrop-filter: blur(200px);
+    filter: blur();
+    box-shadow : 0 3rem 5rem rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+.player {
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem;
+}
+
+.player--active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.name {
+    font-size: 45px;
+    margin-left: -45px;
+}
+
+.score {
+    font-size: 70px;
+    color: #c7365f;
+    margin-left: -45px;
+}
+
+.current {
+    background-color: #c7365f;
+    border-radius: 10px;
+    width: 70%;
+    height: 25%;
+    margin-left: -40px;
+    margin-top: 120px;
+}
+
+.current-label {
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.current-score {
+    color: white;
+    font-size: 25px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #444;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+  
+    background-color: white;
+    backdrop-filter: blur(10px);
+  
+    padding: 0.7rem 2.5rem;
+    border-radius: 50rem;
+  }
+  
+  .btn--new {
+    top: 7rem;
+  }
+  .btn--roll {
+    top: 28rem;
+  }
+  .btn--hold {
+    top: 31.5rem;
+  }
+  
+  .dice {
+    position: absolute;
+    left: 50%;
+    top: 15rem;
+    transform: translateX(-50%);
+    height: 10rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+  }
